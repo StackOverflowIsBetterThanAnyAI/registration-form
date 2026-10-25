@@ -32,15 +32,9 @@ require "database.php";
 
 </div>
 
-<form action="admin.php" method="post">
+<form action="logout.php" method="post">
     <input type="submit" name="logout" value="Logout" />
 </form>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["logout"])) {
-    header("Location: login.php");
-}
-?>
 
 <?php
 require "./templates/footer.php";
